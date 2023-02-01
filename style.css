@@ -7,7 +7,7 @@ body {
     position: absolute;
     height: 100%;
     width: 100%;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 nav ul {
@@ -101,8 +101,6 @@ h4 {
 }
 
 .flex-inner {
-    max-height: 100vh;
-    max-width: 100vh;
     display: flex;
 }
 
@@ -151,7 +149,7 @@ h4 {
 }
 
 .padding-right {
-    padding-right: 10rem;
+    padding-right: 20rem;
 }
 
 .right-align {
@@ -207,6 +205,8 @@ h4 {
     .flex-inner {
         flex-direction: column;
         justify-content: center;
+        max-height: 100vh;
+        max-width: 100vh;
     }
     
 
@@ -219,5 +219,15 @@ h4 {
     .section-title {
         text-align: center;
     }
+
+    .padding-right {
+        padding-right: 17rem;
+    }
 }
 
+@media only screen and (max-width: 600px) {
+    img {
+        width: 6rem;
+        height: 6rem;
+    }
+}
